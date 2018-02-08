@@ -296,3 +296,10 @@ Processing by SchoolClassesController#show as HTML
   [1m[35mSchoolClass Load (0.1ms)[0m  SELECT  "school_classes".* FROM "school_classes" WHERE "school_classes"."id" = ? LIMIT 1  [["id", 1]]
   Rendered school_classes/show.html.erb within layouts/application (0.1ms)
 Completed 200 OK in 34ms (Views: 32.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/school_classes" for 69.133.193.210 at 2018-02-08 13:25:53 +0000
+Processing by SchoolClassesController#index as HTML
+  [1m[36mSchoolClass Load (0.2ms)[0m  [1mSELECT "school_classes".* FROM "school_classes"[0m
+  Rendered school_classes/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 17ms (Views: 16.1ms | ActiveRecord: 0.2ms)
