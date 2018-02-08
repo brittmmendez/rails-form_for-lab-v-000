@@ -1,8 +1,10 @@
 class SchoolClassesController < ApplicationController
   def index
+    @school_classes=SchoolClass.all
   end
 
   def show
+    @school_class=SchoolClass.find(params[:id]
   end
 
   def new
@@ -15,8 +17,8 @@ class SchoolClassesController < ApplicationController
   end
 
   def update
-    @post=Post.find(params[:id]
-    @post.update(school_class_params(:title, :room_number))
+    @school_class=SchoolClass.find(params[:id]
+    @school_class.update(school_class_params(:title, :room_number))
     redirect_to school_class_path(@school_class)
   end
 
