@@ -176,3 +176,15 @@ ActionView::Template::Error (First argument in form cannot contain nil or be emp
 
 Started GET "/school_classes/new" for 69.133.193.210 at 2018-02-08 13:22:42 +0000
 Processing by SchoolClassesController#new as HTML
+  Rendered school_classes/new.html.erb within layouts/application (36.3ms)
+Completed 200 OK in 64ms (Views: 54.8ms | ActiveRecord: 0.9ms)
+
+
+Started POST "/school_classes" for 69.133.193.210 at 2018-02-08 13:22:56 +0000
+Processing by SchoolClassesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"D54kFf4L1dK386404XPAiJMQXIUnslSlskR1XOKFRpR7ZBlAM2azSytZoJpgC+UuqHKqL58aMhw2Ol2J5hdXwA==", "school_class"=>{"title"=>"Science", "room_number"=>"3"}, "commit"=>"Create School class"}
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "school_classes" ("title", "room_number", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Science"], ["room_number", 3], ["created_at", "2018-02-08 13:22:56.732429"], ["updated_at", "2018-02-08 13:22:56.732429"]]
+  [1m[35m (76.3ms)[0m  commit transaction
+Redirected to http://67.205.188.72:38885/school_classes/1
+Completed 302 Found in 81ms (ActiveRecord: 77.1ms)
